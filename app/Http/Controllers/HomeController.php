@@ -16,7 +16,7 @@ class HomeController extends Controller
             $companies = Company::all();
             return view('master', ['companies' => $companies]);
         }else{
-            $company = Session::get('company_name');
+            $company = Session::get('company');
             ////lista de posts etc...
             return view('tenant', ['company' => $company]);
         }

@@ -37,7 +37,10 @@
     @endif
 
     <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
-        <h2 style="color: white">Nome: {{$company}}</h2>
+        <h2 style="color: white">Nome: {{$company->name}}</h2>
+        <p style="color: white">Página inicial do cliente/tenant <br>
+            Uma possibilidade é usar com domínios WildCard. <br>
+            Ex: www.{{$company->domain}}.seusite.com.br</p>
         <div class="flex justify-center pt-8 sm:justify-start sm:pt-0">
             <svg viewBox="0 0 651 192" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-16 w-auto text-gray-700 sm:h-20">
                 <g clip-path="url(#clip0)" fill="#EF3B2D">

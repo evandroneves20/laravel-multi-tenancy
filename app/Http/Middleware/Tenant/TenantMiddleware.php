@@ -32,8 +32,7 @@ class TenantMiddleware
         } elseif ($company && $request->url() != route('404.company') && !$manager->domainIsMaster()) {
             $manager->setConnection($company);
 
-            Session::put('company_id', $company->id);
-            Session::put('company_name', $company->name);
+            Session::put('company', $company);
         }
 
         return $next($request);

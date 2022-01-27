@@ -433,7 +433,8 @@
         <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
             <div class="grid grid-cols-1">
                 <div class="p-6 dark:text-white">
-                    <h3>Lista de Tenants</h3>
+                    <h3>Página Master(para administração de tenants/usuários por exemplo)</h3>
+                    <h5>Lista de Tenants</h5>
                     <div>
                         @forelse($companies as $company)
                             Nome: {{$company->name}} | DB: {{$company->bd_database}} | Domínio: {{$company->domain}}
